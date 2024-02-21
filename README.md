@@ -1,27 +1,29 @@
-# AngularVitrineProdutos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
-## Development server
+## Instalando Angular na maquina
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para instalação foram feito os seguintes passos:
 
-## Code scaffolding
+1. Instalar o nvm:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+``curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash``
 
-## Build
+2. Garregar configurações
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+``source ~/.bashr`` ou ``source ~/.zshrc``
 
-## Running unit tests
+3. Instalar versão especifica do Node.js
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+``nvm install --lts``
 
-## Running end-to-end tests
+4. Instalar Angular
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+``npm install -g @angular/cli``
 
-## Further help
+5. Verificar instaação
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+``ng version``
+
+Agora para criar projeto basta fazer:
+
+``ng new <nome_do_projeto>``
